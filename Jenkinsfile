@@ -1,8 +1,7 @@
 pipeline {
   agent any
     label {
-          label 'NPVR'  
-          customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143'
+          customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143'
         }
   
   environment {
