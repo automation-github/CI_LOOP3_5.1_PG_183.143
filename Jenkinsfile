@@ -1,7 +1,6 @@
 pipeline {
   agent any
   label {
-            label ""
             customWorkspace "/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143"
         }
 
