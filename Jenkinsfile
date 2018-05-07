@@ -1,6 +1,7 @@
 pipeline {
   agent {
-    label 'master'{
+    node {
+      label 'master'
       customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143'
     }
   }
