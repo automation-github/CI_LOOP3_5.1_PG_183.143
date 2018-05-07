@@ -1,8 +1,9 @@
 pipeline {
-  agent any
-    label {
+  agent {node 
+    label 'master'{
       customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143'
     }
+  }
   
   environment {
     target_cluster = '10.65.183.143'
