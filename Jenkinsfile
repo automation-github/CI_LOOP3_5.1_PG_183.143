@@ -1,14 +1,11 @@
 pipeline {
-  agent {node 
-    label 'master'{
+  agent label 'master'{
       customWorkspace '/var/lib/jenkins/workspace/CI_LOOP3_5.1_PG_183.143'
     }
-  }
   
   environment {
     target_cluster = '10.65.183.143'
   }
-}
   stages {
     stage('installation') {
       steps {
@@ -43,3 +40,4 @@ pipeline {
 
   }
 
+}
